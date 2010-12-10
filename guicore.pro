@@ -28,12 +28,11 @@ SOURCES += \
     src/dt_static.cpp \
     src/SkinForm.cpp \
     src/dt_ipaddr.cpp \
-    src/GuiEng.cpp \
     src/dt_font.cpp
 
 INCLUDEPATH += ./include
 
-LIB_PATH=../../../../../lib
+LIB_PATH=lib
 TMPOBJ=tmpobj
 linux-arm-g++ {
     message(g++ = linux-arm-g++)

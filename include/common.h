@@ -11,8 +11,6 @@
 #include <minigui/mgext.h>
 #include <minigui/skin.h>
 #include <assert.h>
-#include "mgime.h"
-#include "mgphone.h"
 
 #include "AchillesDBG.h"
 #define IME_X        495
