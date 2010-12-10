@@ -4,14 +4,13 @@
 CacheBitmap::CacheBitmap(std::string fileName):
 			_refCnt(1)
 {
-                //std::cout << "CacheBitmap" <<std::endl;
-		LoadFile(fileName);
+    //std::cout << "CacheBitmap" <<std::endl;
+    LoadFile(fileName);
 }
 
 bool CacheBitmap::LoadFile(std::string fileName)
 {
     //std::cout << "load file" << fileName << std::endl;
-    //sleep(1);
     if( LoadBitmapFromFile(HDC_SCREEN,&_hBmp,fileName.c_str()) < 0)
     {
         std::cout << "can't load file" << fileName << std::endl;

@@ -1120,7 +1120,6 @@ void CSkinForm::DrawMyText(HDC hdc,CFont* font, RECT *rect, std::string text, in
     {
         //opt = DT_CENTER|DT_VCENTER|DT_SINGLELINE;
     }
-    //HDC hdc = GetClientDC(m_hWnd);
     SelectFont (hdc,font->pfont);
     SetBkMode (hdc,BM_TRANSPARENT);
     SetTextColor (hdc,font->font_color);
