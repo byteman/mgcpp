@@ -10,8 +10,6 @@ QT -= core \
 TARGET = guicore
 TEMPLATE = lib
 
-DEFINES += GUICORE_LIBRARY
-
 SOURCES += \
     src/dt_button.cpp \
     src/dt_cachebmp.cpp \
@@ -33,10 +31,10 @@ SOURCES += \
     src/GuiEng.cpp \
     src/dt_font.cpp
 
-INCLUDEPATH += ../mgi/mgiinc ../../../../include/guicore ../../../../include/utils
+INCLUDEPATH += ./include
 
 LIB_PATH=../../../../../lib
-TMPOBJ=../../../../../tmpobj
+TMPOBJ=tmpobj
 linux-arm-g++ {
     message(g++ = linux-arm-g++)
     LIBS += -L$$LIB_PATH/mx27lib/ -L$$LIB_PATH/libmx27
